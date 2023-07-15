@@ -1,0 +1,105 @@
+* {
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Montserrat', sans-serif;
+   margin: 0;
+}
+
+.container {
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #202733;
+   padding: 1em;
+}
+
+.card {
+   width: 100%;
+   max-width: 540px;
+   position: relative;
+   background-color: #313A48;
+   padding: 2.5em;
+   border-radius: 10px;
+
+}
+
+.advice-number {
+   font-size: 12px;
+   text-transform: uppercase;
+   text-align: center;
+   color: #53FFAA;
+}
+
+.advice {
+   font-size: 25px;
+   font-weight: 600;
+   text-align: center;
+   color: #CEE3E9;
+}
+
+.line-divider-container {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-bottom: 2px solid #4F5D74;
+   margin: 50px 0px;
+}
+
+.line-divider {
+   background-color: #313A48;
+   width: 64px;
+   height: 64px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   padding: 20px;
+   border-radius: 50%;
+
+}
+
+.line-divider img,
+.dice img {
+   max-width: 100%;
+   display: block;
+}
+
+.dice-container {
+   display: flex;
+   justify-content: center;
+}
+
+.dice {
+   width: 64px;
+   height: 64px;
+   display: flex;
+   justify-content: center;
+   position: absolute;
+   background-color: #53FFAA;
+   padding: 20px;
+   margin-top: 7px;
+   border-radius: 50%;
+   transition: box-shadow 150ms ease-out;
+}
+
+.dice:hover {
+   box-shadow: 0px 0px 40px #53FFAA;
+}
+
+@media screen and (min-width: 600px) {
+   .advice-number {
+      font-size: 14px;
+   }
+
+   .advice {
+      font-size: 27px;
+   }
+
+   .dice {
+      cursor: pointer;
+   }
+}
